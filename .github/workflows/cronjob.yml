@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Whiner Bot 
         # Hit the webhook endpoint to rebuild  from the "main" branch
-        run: complain.py
+        run: python complain.py
