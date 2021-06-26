@@ -30,10 +30,10 @@ class InternetSpeedTwitterBot:
         import tweepy
 
 # personal details
-        consumer_key ="DggiEEVJeoaZ0A6lIslnm1oGR"
-        consumer_secret ="QbC8VWZaHkOkdqGwwvqEYVfUxCIdfqZuK5bqfaTam3jG4Sl2Df"
-        access_token ="797872401149206528-kI2KM5nR49yQV4MdwI6k4zHN7jOPpDC"
-        access_token_secret ="rSaNybTiH0hZ1k8c9q0vhkHpUDT7zaEBaGphGThO5gYmM"
+        consumer_key ="dfZTldoXKVsBn8zsKHB7Ggokk"
+        consumer_secret ="hbYzNoeNubY7wsABO2vpU5ob0t4IXVVkMNJB0PEyi1QFgoANmK"
+        access_token ="1408727648952487937-pEOOiORcQJgrhh4Oee41CQqedrMafq"
+        access_token_secret ="3k27rNgLA6WrN9jrqhCDtVjaMwnCVoZluGnwUCk2luzAd"
 
         # authentication of consumer key and secret
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -65,6 +65,6 @@ def some_job():
 
 
 scheduler = BlockingScheduler()
-scheduler.add_job(some_job, 'interval', minutes=3)
+scheduler.add_job(some_job, 'interval', minutes = 30)
 scheduler.start()
 
