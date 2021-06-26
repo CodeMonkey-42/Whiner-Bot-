@@ -1,1 +1,12 @@
-
+on:
+  schedule:
+    # Runs "at minute 55 past every hour" (see https://crontab.guru)
+    - cron: '0 * * * *'
+jobs:
+  build:
+    name: Whines every hour
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Whiner Bot 
+        # Hit the webhook endpoint to rebuild  from the "main" branch
+        run: complain.py
